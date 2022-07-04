@@ -3,8 +3,8 @@ import java.util.*;
 public class mainFile {
     
     public static void main(String[] args){
-        Scanner inp = new Scanner(System.in);
-        //int n = inp.nextInt();
+        try (Scanner inp = new Scanner(System.in)) {
+        }
 
        //LinkedList------------------------------------------------
         /*  LinkedListImpl l1= new LinkedListImpl();
@@ -81,7 +81,7 @@ System.out.println(l1.sizeLL() + " " + l2.sizeLL());
         //String s= inp.next();
 
         System.out.println(ut.duplicateBrackets("(a+b)+(c+d)"));
-       
+        System.out.println(ut.balancedBrackets("{({[]([)})}"));
 
        // st.pop();
         //st.display();
@@ -92,5 +92,5 @@ System.out.println(l1.sizeLL() + " " + l2.sizeLL());
     }
 
 
-
+    
 }
