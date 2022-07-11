@@ -2,6 +2,7 @@ import java.util.*;
 
 public class mainFile {
     
+    
     public static void main(String[] args){
         try (Scanner inp = new Scanner(System.in)) {
         }
@@ -80,14 +81,22 @@ System.out.println(l1.sizeLL() + " " + l2.sizeLL());
          stackUtility ut = new stackUtility();
         //String s= inp.next();
 
-        System.out.println(ut.duplicateBrackets("(a+b)+(c+d)"));
-        System.out.println(ut.balancedBrackets("{({[]([)})}"));
+        // System.out.println(ut.duplicateBrackets("(a+b)+(c+d)"));
+        // System.out.println(ut.balancedBrackets("{({[]([)})}"));
 
        // st.pop();
         //st.display();
         //System.out.println(st.sizeStack());
         //System.out.println(st.isEmpty());
         //System.out.println(st.top());
+    //  int a[][] = {{2,3},{3,7},{8,6},{9,10}};
+    //     ut.mergeIntervals(a);
+      
+       int a[] = {2,5,9,3,1,12,6,8,7};
+       int[] ans = ut.nextGreaterEleToRight(a);
+       for(int i=0;i<ans.length;i++){
+        System.out.print(ans[i] +" ");
+       }
         
     }
 

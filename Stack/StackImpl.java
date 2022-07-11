@@ -11,21 +11,7 @@
             this.next = null;
         }
     }
-    class Pair implements Comparable<Pair>{
-        int startTime;
-        int endTime;
-        Pair(int startTime,int endTime){
-            this.startTime = startTime;
-            this.endTime = endTime;
-        }
-        public int compareTo(Pair o){
-          if(this.startTime != o.startTime)
-             return this.startTime-o.startTime;
-           else 
-           return this.endTime-o.endTime;  
-        }
-    }
-
+    
     Node top;
     int size;
 
