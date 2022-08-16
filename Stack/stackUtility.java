@@ -111,5 +111,23 @@ public class stackUtility {
      return nge;
     }
 
+    public int[] nextGreEleToRight2(int[] a){
+      int nge2[]= new int[a.length];
+      StackImpl<Integer> st = new StackImpl<>();
+      st.push(0);
+      for(int i=1;i<a.length;i++){
+         while(!st.isEmpty() && a[i]>a[st.top()]){
+            int pos = st.pop();
+            nge2[pos] = a[i];
+         }
+         st.push(i);
+      }
+      while(st.sizeStack()>0){
+         int pos = st.pop();
+         nge2[pos] = -1;
+      }
+      return nge2;
+    }
+
     
 }

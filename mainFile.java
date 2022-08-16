@@ -78,26 +78,41 @@ System.out.println(l1.sizeLL() + " " + l2.sizeLL());
 */
 
      //Stack ----------------------------------------------------
-         stackUtility ut = new stackUtility();
-        //String s= inp.next();
+        /*stackUtility ut = new stackUtility();
+        String s= inp.next();
 
-        // System.out.println(ut.duplicateBrackets("(a+b)+(c+d)"));
-        // System.out.println(ut.balancedBrackets("{({[]([)})}"));
+        System.out.println(ut.duplicateBrackets("(a+b)+(c+d)"));
+        System.out.println(ut.balancedBrackets("{({[]([)})}"));
 
-       // st.pop();
-        //st.display();
-        //System.out.println(st.sizeStack());
-        //System.out.println(st.isEmpty());
-        //System.out.println(st.top());
-    //  int a[][] = {{2,3},{3,7},{8,6},{9,10}};
-    //     ut.mergeIntervals(a);
+       st.pop();
+        st.display();
+        System.out.println(st.sizeStack());
+        System.out.println(st.isEmpty());
+        System.out.println(st.top());
+     int a[][] = {{2,3},{3,7},{8,6},{9,10}};
+        ut.mergeIntervals(a);
       
        int a[] = {2,5,9,3,1,12,6,8,7};
-       int[] ans = ut.nextGreaterEleToRight(a);
+       //int[] ans = ut.nextGreaterEleToRight(a);
+       int[] ans = ut.nextGreEleToRight2(a);
        for(int i=0;i<ans.length;i++){
         System.out.print(ans[i] +" ");
-       }
+       }*/
         
+
+       //Queue---------------------------------------
+       QueueImpl q = new QueueImpl();
+       q.enqueue(2);
+       q.enqueue(3);
+       q.enqueue(5);
+       q.enqueue(7);
+    //    System.out.println(q.frontEle());
+    //    System.out.println(q.rearEle());
+       q.traverse();
+       System.out.println("Rear Element is " + q.rearEle());
+       System.out.println(q.dequeue());
+       q.traverse();
+       
     }
 
 
