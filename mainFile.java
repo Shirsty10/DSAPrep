@@ -134,11 +134,31 @@ public class mainFile {
          */
 
         /*Generic tree */
-        GenericTree t = new GenericTree();
-        int arr[] = { 10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1,
-                -1 };
-        t.LevelOrderTraversal2(t.createTree(arr)); 
+        // GenericTree t = new GenericTree();
+        // int arr[] = { 10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1,
+        //         -1 };
+        // t.LevelOrderTraversal2(t.createTree(arr)); 
+        //System.out.println(Math.min(Double.MIN_VALUE, 0.0d));
+        // long longWithL = 1000 * 60 * 60 * 24 * 365L;
+        // long longWithoutL = 1000 * 60 * 60 * 24 * 365;
+        // System.out.println(longWithL);
+        // System.out.println(longWithoutL);
+//         Integer i1 = 127;
+//  Integer i2 = 127;
+//  System.out.println(i1 == i2);
+//  Integer i3 = 128;
+//  Integer i4 = 128;
+//  System.out.println(i3 == i4);
 
-    }
+
+     String s = "shirsty";
+
+     StringBuilder sb = new StringBuilder(s);
+     System.out.println(sb.reverse());
+
+     
+
+        }
+
 
 }
